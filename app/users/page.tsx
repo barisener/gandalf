@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Button } from "@/components/ui/button";
 
 const index = () => {
   return (
-    <div>index</div>
-  )
-}
+    <div>
+      index
+      <Button>Click me</Button>
+    </div>
+  );
+};
 
-export default index
+export default index;
