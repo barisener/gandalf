@@ -8,7 +8,7 @@ import Link from "next/link";
 const Sidebar = () => {
   const menuItems = [
     {
-      title: "GANDALF",
+      title: "Gandalf Settings",
       links: [
         { name: "Organization", href: "/organization" },
         { name: "Organization User", href: "/organization-user" },
@@ -27,6 +27,7 @@ const Sidebar = () => {
 
   return (
     <div className={cn("w-64 h-screen bg-black text-white p-4", "lg:w-56 sm:w-48 w-40")}>
+      <h1 className="text-2xl font-semibold mb-4">Forward >> </h1>
       {menuItems.map((section, index) => (
         <div key={index} className="mb-8">
           <h2 className="flex items-center justify-start gap-2.5 text-xl font-semibold mb-4">
